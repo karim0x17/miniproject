@@ -12,7 +12,7 @@ function Weatherapi({ cities, onDataFetched }) {
       if (!cities) return;
       const fetchDataWeather = async () => {
         try {
-          const geoResponse = await axios.get('http://api.openweathermap.org/geo/1.0/direct', {
+          const geoResponse = await axios.get('https://api.openweathermap.org/geo/1.0/direct', {
             params: {
               q: cities,
               appid: weatherapi,
@@ -26,7 +26,7 @@ function Weatherapi({ cities, onDataFetched }) {
           }
   
           const { lat, lon } = geoResponse.data[0];
-          const weatherResponse = await axios.get('http://api.openweathermap.org/data/2.5/forecast', {
+          const weatherResponse = await axios.get('https://api.openweathermap.org/data/2.5/forecast', {
             params: {
               lat,
               lon,
