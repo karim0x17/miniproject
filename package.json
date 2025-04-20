@@ -2,7 +2,7 @@
   "name": "miniproject",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://karim0x17.github.io/<your-repo-name>",
+  
 
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
